@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import QuestionnaireHeader from './QuestionnaireHeader';
 
 interface Props {
-  onComplete: (score: number) => void;
+  onComplete: (score: number, comments: string, isPublic: boolean) => void;
   baseScore: number;
   onBack: () => void;
 }
@@ -19,7 +19,7 @@ export default function ViewComments({ onComplete, baseScore, onBack }: Props) {
     setTimeout(() => {
       let finalScore = baseScore;
       if (comments.trim().length > 10) finalScore += 50; 
-      onComplete(finalScore);
+      onComplete(finalScore, comments, isPublic);
     }, 1400);
   };
 

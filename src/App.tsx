@@ -10,6 +10,7 @@ import ViewReasons from './components/ViewReasons';
 import ViewComments from './components/ViewComments';
 import ViewLootbox from './components/ViewLootbox';
 import ViewImpact from './components/ViewImpact';
+import { saveUserProfile, saveFeedback } from './firebase';
 
 export type ViewState = 'landing' | 'did_leave' | 'onboarding' | 'dashboard' | 'screener' | 'amount' | 'reasons' | 'comments' | 'lootbox' | 'impact';
 
@@ -126,7 +127,17 @@ export default function App() {
 
         {view === 'comments' && <ViewComments 
           baseScore={sessionScore}
-          onComplete={(score) => {
+          onComplete={(score, comments, isPublic) => {
+             saveFeedback({
+               email: profile.email,
+               department: profile.department,
+               didLeaveFood,
+               selectedDishes,
+               dishesWithAmounts,
+               comments,
+               isPublic,
+               sessionScore: score,
+             });
              handleSurveyComplete(score);
           }}
           onBack={() => {
@@ -142,6 +153,12 @@ export default function App() {
 
         {view === 'onboarding' && <ViewOnboarding profile={profile} onComplete={(email, dept) => {
            updateProfile({ email, department: dept });
+           saveUserProfile({
+             email,
+             department: dept,
+             streak: profile.streak,
+             points: profile.points,
+           });
            if (sessionScore > 0) {
              setView('lootbox');
            } else {
