@@ -6,11 +6,17 @@
   <img src="public/logo-behavix.png" alt="Behavix logo" width="140" />
 </p>
 
-Behavix is a **one-week UX Challenge prototype** built by Team 1 at the University of Trento. The challenge was to take an existing, struggling food-waste feedback system and redesign its UX from scratch — turning a tool with a 90% dropout rate and 1% engagement into a cooperative, rewarding gamification experience targeting 20% engagement.
+Behavix is a **one-week UX Challenge prototype** built by Team 1 at the University of Trento. The challenge was to take an existing food-waste feedback system and redesign its UX from scratch — turning a tool with a 90% dropout rate and 1% engagement into a cooperative, rewarding gamification experience targeting 20% engagement.
 
 The codebase contains two fully functional apps sharing a single repo: a **diner-facing questionnaire** with streaks, mystery rewards, and department leaderboards, and a **canteen manager dashboard** with KPIs, AI-style advice, and dish-level waste forecasting.
 
 > ⚠️ This is a **prototype** built for a design challenge. It is not a production-ready system.
+
+<p align="center">
+  <a href="https://behavix-sandy.vercel.app/"><img src="https://img.shields.io/badge/Diner%20App-behavix--sandy.vercel.app-4ade80?style=for-the-badge&logo=vercel&logoColor=white" alt="Diner App" /></a>
+  &nbsp;
+  <a href="https://behavix-dashboard.vercel.app/manager.html"><img src="https://img.shields.io/badge/Manager%20Dashboard-behavix--dashboard.vercel.app-0ea5e9?style=for-the-badge&logo=vercel&logoColor=white" alt="Manager Dashboard" /></a>
+</p>
 
 ---
 
@@ -39,32 +45,6 @@ The UX challenge: redesign the feedback experience as a **cooperative and reward
 | **Yuxin Qian** | UI Programmer |
 | **Ana Akhalauri** | UX Designer |
 | **Giuliano Campagnolo** | Lead Programmer |
-
----
-
-## Screenshots
-
-### Diner flow
-
-<p align="center">
-  <img src="public/screenshot-screener.png" alt="Food screener — dish selection" width="280" />
-  &nbsp;&nbsp;
-  <img src="public/screenshot-lootbox.png" alt="Mystery lootbox reveal" width="280" />
-  &nbsp;&nbsp;
-  <img src="public/screenshot-reward.png" alt="Reward — free espresso ticket" width="280" />
-</p>
-
-<p align="center">
-  <img src="public/screenshot-dashboard.png" alt="Personal dashboard with leaderboard and rewards vault" width="280" />
-  &nbsp;&nbsp;
-  <img src="public/screenshot-impact.png" alt="Digital Eco-Tank — collective impact view" width="280" />
-</p>
-
-### Physical touchpoint — Table tents
-
-<p align="center">
-  <img src="public/table-tents.jpg" alt="Behavix table tents with QR code, placed at canteen tables" width="380" />
-</p>
 
 ---
 
@@ -172,11 +152,6 @@ behavix/
    ├─ data/                 # Mock datasets (dinerMock, managerMock)
    └─ lib/                  # Cross-cutting helpers (firebase.ts, utils.ts)
 ```
-
-## Live prototypes
-
-- Diner app: <https://behavix-sandy.vercel.app/>
-- Manager dashboard: <https://behavix-dashboard.vercel.app/manager.html>
 
 ## License
 
