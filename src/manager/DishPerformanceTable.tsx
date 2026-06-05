@@ -5,7 +5,7 @@ import {
   ACTIONABLE_LABELS,
   ActionableReason,
   DishPerformance,
-} from '../../data/managerMock';
+} from '../data/managerMock';
 
 interface Props {
   dishes: DishPerformance[];

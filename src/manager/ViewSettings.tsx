@@ -1,6 +1,6 @@
 import { useState, ReactNode } from 'react';
 import { Save, User, Bell, Brain, Download, Globe } from 'lucide-react';
-import { DEFAULT_SETTINGS, ManagerSettings } from '../../data/managerMock';
+import { DEFAULT_SETTINGS, ManagerSettings } from '../data/managerMock';
 
 function Toggle({ checked, onChange }: { checked: boolean; onChange: (v: boolean) => void }) {
   return (

@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type-check
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+        env:
+          # Dummy values so Vite's import.meta.env doesn't break the build.
+          # Real values are loaded from .env.local during local development.
+          VITE_FIREBASE_API_KEY: ci-placeholder
+          VITE_FIREBASE_AUTH_DOMAIN: ci-placeholder
+          VITE_FIREBASE_PROJECT_ID: ci-placeholder
+          VITE_FIREBASE_STORAGE_BUCKET: ci-placeholder
+          VITE_FIREBASE_MESSAGING_SENDER_ID: ci-placeholder
+          VITE_FIREBASE_APP_ID: ci-placeholder
+          VITE_FIREBASE_MEASUREMENT_ID: ci-placeholder

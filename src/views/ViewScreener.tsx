@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { UserProfile, DishSelection } from '../types';
-import QuestionnaireHeader from './QuestionnaireHeader';
+import QuestionnaireHeader from '../components/QuestionnaireHeader';
 
 const MENU = [
   { id: 'first', label: 'What was your first dish?', options: ['Pasta or rice with oil', 'Pasta or rice with tomato sauce', 'Pasta or rice with ragù', 'Bowl of the day', 'Salad of the day'] },

@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { UserProfile, Department, DishSelection, DishAmount } from './types';
-import ViewLanding from './components/ViewLanding';
-import ViewDidLeaveFood from './components/ViewDidLeaveFood';
-import ViewOnboarding from './components/ViewOnboarding';
-import ViewDashboard from './components/ViewDashboard';
-import ViewScreener from './components/ViewScreener';
-import ViewAmountLeft from './components/ViewAmountLeft';
-import ViewReasons from './components/ViewReasons';
-import ViewComments from './components/ViewComments';
-import ViewLootbox from './components/ViewLootbox';
-import ViewImpact from './components/ViewImpact';
-import { saveUserProfile, saveFeedback } from './firebase';
+import ViewLanding from './views/ViewLanding';
+import ViewDidLeaveFood from './views/ViewDidLeaveFood';
+import ViewOnboarding from './views/ViewOnboarding';
+import ViewDashboard from './views/ViewDashboard';
+import ViewScreener from './views/ViewScreener';
+import ViewAmountLeft from './views/ViewAmountLeft';
+import ViewReasons from './views/ViewReasons';
+import ViewComments from './views/ViewComments';
+import ViewLootbox from './views/ViewLootbox';
+import ViewImpact from './views/ViewImpact';
+import { saveUserProfile, saveFeedback } from './lib/firebase';
 
 export type ViewState = 'landing' | 'did_leave' | 'onboarding' | 'dashboard' | 'screener' | 'amount' | 'reasons' | 'comments' | 'lootbox' | 'impact';
 

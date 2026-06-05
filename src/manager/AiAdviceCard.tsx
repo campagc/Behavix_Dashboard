@@ -1,5 +1,5 @@
 import { Sparkles, ArrowUpRight, AlertOctagon, Activity, Info } from 'lucide-react';
-import { AI_ADVICE, AiAdvice } from '../../data/managerMock';
+import { AI_ADVICE, AiAdvice } from '../data/managerMock';
 
 const SEVERITY_STYLES: Record<AiAdvice['severity'], { dot: string; pill: string; icon: any; emoji: string }> = {
   high: { dot: 'bg-coral', pill: 'bg-[#FEE2E2] text-coral', icon: AlertOctagon, emoji: '🔴' },

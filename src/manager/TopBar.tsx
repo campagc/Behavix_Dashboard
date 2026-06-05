@@ -1,5 +1,5 @@
 import { Calendar, ChevronDown, Bell, Download } from 'lucide-react';
-import { TimeRange, CANTEEN_SITES, CanteenSite } from '../../data/managerMock';
+import { TimeRange, CANTEEN_SITES, CanteenSite } from '../data/managerMock';
 
 interface Props {
   range: TimeRange;

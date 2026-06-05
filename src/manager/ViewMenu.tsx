@@ -7,7 +7,7 @@ import {
   DishCategory,
   DishPerformance,
   TimeRange,
-} from '../../data/managerMock';
+} from '../data/managerMock';
 
 const CATEGORIES: DishCategory[] = ['First Course', 'Second Course', 'Side Dish', 'Bread'];
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
-import QuestionnaireHeader from './QuestionnaireHeader';
+import QuestionnaireHeader from '../components/QuestionnaireHeader';
 
 interface Props {
   onComplete: (score: number, comments: string, isPublic: boolean) => void;

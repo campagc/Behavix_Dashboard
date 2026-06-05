@@ -1,5 +1,5 @@
 import { Leaf, TreePine, Cloud, HandHeart, Download } from 'lucide-react';
-import { ECO_TIMELINE, CSR_BY_RANGE, TimeRange } from '../../data/managerMock';
+import { ECO_TIMELINE, CSR_BY_RANGE, TimeRange } from '../data/managerMock';
 
 interface Props { range: TimeRange; }
 

@@ -1,5 +1,5 @@
 import { Sparkles } from 'lucide-react';
-import { WEEKLY_WASTE, DailyWastePoint } from '../../data/managerMock';
+import { WEEKLY_WASTE, DailyWastePoint } from '../data/managerMock';
 
 interface Props { wasteData?: DailyWastePoint[]; }
 

@@ -1,5 +1,5 @@
 import { Leaf, TreePine, Cloud, HandHeart } from 'lucide-react';
-import { CsrSnapshot } from '../../data/managerMock';
+import { CsrSnapshot } from '../data/managerMock';
 
 interface Props {
   csr: CsrSnapshot;

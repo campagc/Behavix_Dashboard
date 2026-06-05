@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Department, UserProfile } from '../types';
-import { DEPARTMENTS } from '../data/mock';
+import { DEPARTMENTS } from '../data/dinerMock';
 import { Apple, Mail } from 'lucide-react';
-import { signInWithGoogle, signInWithApple } from '../firebase';
+import { signInWithGoogle, signInWithApple } from '../lib/firebase';
 
 interface Props {
   profile: UserProfile;

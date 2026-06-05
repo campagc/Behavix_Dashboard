@@ -574,7 +574,7 @@ export interface ManagerSettings {
 
 export const DEFAULT_SETTINGS: ManagerSettings = {
   displayName: 'Massimiliano C.',
-  email: 'massimiliano.c@markas.it',
+  email: 'manager@example.com',
   role: 'Canteen Manager',
   site: 'Unibz Campus — Bolzano',
   language: 'it',

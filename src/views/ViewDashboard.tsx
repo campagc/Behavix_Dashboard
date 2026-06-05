@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { UserProfile } from '../types';
-import { MOCK_LEADERBOARD } from '../data/mock';
+import { MOCK_LEADERBOARD } from '../data/dinerMock';
 import { Leaf, Gift, Trophy, QrCode, Ticket, Clock } from 'lucide-react';
 
 interface Props {

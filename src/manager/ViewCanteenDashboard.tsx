@@ -1,16 +1,16 @@
 import { useMemo, useState } from 'react';
-import Sidebar, { SidebarSection } from './manager/Sidebar';
-import TopBar from './manager/TopBar';
-import KpiStrip from './manager/KpiStrip';
-import AiAdviceCard from './manager/AiAdviceCard';
-import SustainabilityCard from './manager/SustainabilityCard';
-import DishPerformanceTable from './manager/DishPerformanceTable';
-import WasteSplitCard from './manager/WasteSplitCard';
-import PredictedVsActualChart from './manager/PredictedVsActualChart';
-import ViewMenu from './manager/ViewMenu';
-import ViewForecast from './manager/ViewForecast';
-import ViewSustainability from './manager/ViewSustainability';
-import ViewSettings from './manager/ViewSettings';
+import Sidebar, { SidebarSection } from './Sidebar';
+import TopBar from './TopBar';
+import KpiStrip from './KpiStrip';
+import AiAdviceCard from './AiAdviceCard';
+import SustainabilityCard from './SustainabilityCard';
+import DishPerformanceTable from './DishPerformanceTable';
+import WasteSplitCard from './WasteSplitCard';
+import PredictedVsActualChart from './PredictedVsActualChart';
+import ViewMenu from './ViewMenu';
+import ViewForecast from './ViewForecast';
+import ViewSustainability from './ViewSustainability';
+import ViewSettings from './ViewSettings';
 import {
   CANTEEN_SITES,
   CSR_BY_RANGE,

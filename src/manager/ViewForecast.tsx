@@ -5,7 +5,7 @@ import {
   WEEKLY_WASTE,
   AI_ADVICE,
   ACTIONABLE_COLORS,
-} from '../../data/managerMock';
+} from '../data/managerMock';
 
 // Mini bar chart for accuracy trend
 function AccuracyBar() {

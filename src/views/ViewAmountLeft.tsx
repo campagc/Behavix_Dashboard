@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { DishSelection, DishAmount } from '../types';
-import QuestionnaireHeader from './QuestionnaireHeader';
+import QuestionnaireHeader from '../components/QuestionnaireHeader';
 
 interface Props {
   dishes: DishSelection[];

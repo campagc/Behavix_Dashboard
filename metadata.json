@@ -2,5 +2,5 @@
   "name": "Behavix",
   "description": "Gamification module for food waste feedback with random rewards and department leaderboards.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }

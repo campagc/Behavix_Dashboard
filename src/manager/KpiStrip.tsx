@@ -1,4 +1,4 @@
-import { KpiSnapshot } from '../../data/managerMock';
+import { KpiSnapshot } from '../data/managerMock';
 
 interface Props {
   kpi: KpiSnapshot;
